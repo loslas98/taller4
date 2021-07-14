@@ -6,10 +6,12 @@ import java.util.ArrayList;
 
 public class Terremoto extends Desastre{
     private String gradosRichter;
+    private String nombre;
 
-    public Terremoto(String gradosRichter,String pais, String ciudad, String año, ArrayList<Desaparecido> desaparecidos) {
+    public Terremoto(String gradosRichter,String nombre,String pais, String ciudad, String año, ArrayList<Desaparecido> desaparecidos) {
         super(pais,ciudad,año,desaparecidos);
         this.gradosRichter = gradosRichter;
+        this.nombre = nombre;
     }
 
     public String getGradosRichter() {
@@ -19,4 +21,6 @@ public class Terremoto extends Desastre{
     public void setGradosRichter(String gradosRichter) {
         this.gradosRichter = gradosRichter;
     }
+
+
 }

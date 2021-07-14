@@ -48,4 +48,19 @@ public class Desastre{
     public void setDesaparecidos(ArrayList<Desaparecido> desaparecidos) {
         this.desaparecidos = desaparecidos;
     }
+
+    public void listaDesparecidos(ArrayList<Desaparecido> desaparecidos){
+        for (Desaparecido desaparecido:desaparecidos){
+            System.out.println(desaparecido);
+        }
+
+    }
+    public void agregarDesaparecidos(ArrayList<Desaparecido> desaparecidos){
+
+
+    }
+
+    public void detalleDesastre(){
+
+    }
 }
