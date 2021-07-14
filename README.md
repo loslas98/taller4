@@ -1,3 +1,2 @@
 # taller4
-Se crea paquete desastre, con una clase desastre y algunos tipos de desastre, una clase desaparecido con su respectivo paquete, un paquete de datos que va a incluir lista de 
-desaparecidos y detalle de desastres.
+Se crea paquete desastre, con una clase desastre y un tipo de desastre (Terremoto), una clase desaparecido con su respectivo paquete, un paquete Ventana que contiene la clase GUI donde se hara uso de un Jtable, para rellenar esta tabla se usa el metodo listaDesaparecidos, es necesario que este metodo este presente en esta clase ya que necesitamos usar Objetos y metodos de JFrame (addRow(), DefautlTableModel).
