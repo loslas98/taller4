@@ -22,15 +22,15 @@ public class GUI extends JFrame {
         ArrayList<Desaparecido> desaparecidos = new ArrayList<Desaparecido>();
         Terremoto valdivia = new Terremoto("Valdivia 1960",desaparecidos);
         Desaparecido max = new Desaparecido("max","chile","22","masculino",valdivia);
-        valdivia.agregarDesaparecidos(desaparecidos,max);
+        valdivia.actualizarDesaparecidos(desaparecidos,max);
         Desaparecido john = new Desaparecido("john","chile","43","masculino",valdivia);
-        valdivia.agregarDesaparecidos(desaparecidos,john);
+        valdivia.actualizarDesaparecidos(desaparecidos,john);
         Desaparecido ines = new Desaparecido("Ines","chile","43","femenino",valdivia);
-        valdivia.agregarDesaparecidos(desaparecidos,ines);
+        valdivia.actualizarDesaparecidos(desaparecidos,ines);
         Desaparecido mike = new Desaparecido("Michael","EEUU","23","masculino",valdivia);
-        valdivia.agregarDesaparecidos(desaparecidos,mike);
+        valdivia.actualizarDesaparecidos(desaparecidos,mike);
 
-        rellenarTabla(desaparecidos);
+        listaDesaparecidos(desaparecidos);
 
 
 
@@ -41,7 +41,7 @@ public class GUI extends JFrame {
 
     }
 
-    public void rellenarTabla(ArrayList<Desaparecido> desaparecidos){
+    public void listaDesaparecidos(ArrayList<Desaparecido> desaparecidos){
         for (Desaparecido desaparecido:desaparecidos){
             DefaultTableModel modelo = (DefaultTableModel) desaparecidosTerremoto.getModel();
             String[] datos = desaparecido.arreglo();
