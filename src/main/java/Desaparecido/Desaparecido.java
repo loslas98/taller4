@@ -9,11 +9,12 @@ public class Desaparecido {
     private String sexo;
     private Terremoto terremoto;
 
-    public Desaparecido(String nombre, String pais, String edad, String sexo) {
+    public Desaparecido(String nombre, String pais, String edad, String sexo, Terremoto terremoto) {
         this.nombre = nombre;
         this.pais = pais;
         this.edad = edad;
         this.sexo = sexo;
+        this.terremoto = terremoto;
     }
 
     public String getNombre() {
@@ -63,7 +64,8 @@ public class Desaparecido {
         String edad = this.edad;
         String pais = this.pais;
         String sexo = this.sexo;
-        return new String[]{nombre,edad,pais,sexo};
+        String terremotoNombre  = this.terremoto.getNombre();
+        return new String[]{nombre,edad,pais,sexo,terremotoNombre};
 
     }
 }

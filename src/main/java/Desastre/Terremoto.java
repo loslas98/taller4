@@ -14,6 +14,12 @@ public class Terremoto extends Desastre{
         this.nombre = nombre;
     }
 
+    public Terremoto(String nombre,ArrayList<Desaparecido> desaparecidos){
+        super(desaparecidos);
+        this.nombre = nombre;
+
+    }
+
     public String getGradosRichter() {
         return gradosRichter;
     }
@@ -22,5 +28,7 @@ public class Terremoto extends Desastre{
         this.gradosRichter = gradosRichter;
     }
 
-
+    public String getNombre() {
+        return nombre;
+    }
 }
